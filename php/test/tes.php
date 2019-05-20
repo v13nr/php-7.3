@@ -3,9 +3,9 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-include "MysqliDb.php";
-$db = new MysqliDb ('localhost', 'root', '', 'php7') or die("unhost");
-
+include "../MysqliDb.php";
+include "../connection.php";
+ 
 
 $cols = Array ("namabrg", "kodebrg");
 $users = $db->get ("stock", null, $cols);
