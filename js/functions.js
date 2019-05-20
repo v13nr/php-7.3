@@ -36,3 +36,5 @@
 		    var expires = "expires=" + d.toGMTString(); // Compose the expirartion date
 		    window.document.cookie = name+"="+"; "+expires; // Set the cookie with name and the expiration date
 		}
+
+		
