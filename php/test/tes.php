@@ -8,10 +8,12 @@ include "../connection.php";
  
 
 $cols = Array ("namabrg", "kodebrg");
-$users = $db->get ("stock", null, $cols);
+$stocks = $db->get ("stock", null, $cols);
 if ($db->count > 0)
-    foreach ($users as $user) { 
-        print_r ($user);
+    foreach ($stocks as $stock) { 
+        //print_r ($user);
     }
 	
+echo json_encode($stocks);
+
 ?>
