@@ -57,8 +57,14 @@ require_once("../connection.php");
 	* User session logout
 	*
 	*/
-	function logout()
+	function action_logout()
 	{
+		$res = array(
+			'status' => true,
+			'message'	=> "Anda Akan Logout, OK"
+		 );
+
+		echo json_encode($res);
 		
 	}
 
