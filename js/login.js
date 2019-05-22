@@ -15,6 +15,8 @@ function login(){
 		success: function(res){
 			alert(res.message);
 			createCookie("ck_validLogin", "valid", 1);
+
+			window.location.href = base_url+"index.html";
 		},
 		error: function(){
 			alert("ajax error");
