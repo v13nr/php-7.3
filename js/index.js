@@ -17,6 +17,12 @@ $(document).ready(function(){
 	$("#mn_profile").click(function(){
 		load_profile();
 	});
+	$("#mn_home").click(function(){
+		load_dashboard();
+	});
+	$("#mn_tr_tabelProduk").click(function(){
+		load_tableProduk();
+	});
 });
 
 function logout(){
@@ -38,4 +44,12 @@ function logout(){
 
 function load_profile(){
 	$("#nn_content").load("views/profile.html");
+}
+
+function load_dashboard(){
+	$("#nn_content").load("views/dashboard.html");
+}
+
+function load_tableProduk(){
+	$("#nn_content").load("views/table.html");
 }
