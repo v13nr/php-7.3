@@ -99,9 +99,9 @@ function showHtmlMessage() {
 
 function showAutoCloseTimerMessage() {
     swal({
-        title: "Auto close alert!",
-        text: "I will close in 2 seconds.",
-        timer: 2000,
+        title: "Welcome to v13nr Admin Material Design",
+        text: "I will close in 4 seconds.",
+        timer: 4000,
         showConfirmButton: false
     });
 }
