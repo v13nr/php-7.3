@@ -24,10 +24,15 @@ function login(){
 				$('#show_welcome_nn').trigger('click');
 				setTimeout(function () {
 			       window.location.href = base_url+"index.html";
-			    }, 4000); //will call the function after 2 secs.
+			    }, 3000); //will call the function after 2 secs.
 				
 			} else {
-				alert('Maaf, username atau password salah..');
+				
+				$('#show_unlog').trigger('click');
+				setTimeout(function () {
+
+			    }, 1000); //will call the function after 2 secs.
+				
 			}
 		},
 		error: function(){

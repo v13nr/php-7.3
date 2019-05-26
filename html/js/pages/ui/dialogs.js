@@ -25,6 +25,9 @@ $(function () {
         else if (type === 'autoclose-timer') {
             showAutoCloseTimerMessage();
         }
+        else if (type === 'autoclose-timer-login-false') {
+            showAutoCloseTimerMessage_loginFalse();
+        }
         else if (type === 'prompt') {
             showPromptMessage();
         }
@@ -100,8 +103,16 @@ function showHtmlMessage() {
 function showAutoCloseTimerMessage() {
     swal({
         title: "Welcome to v13nr Admin Material Design",
-        text: "I will close in 4 seconds.",
-        timer: 4000,
+        text: "I will close in 3 seconds.",
+        timer: 3000,
+        showConfirmButton: false
+    });
+}
+function showAutoCloseTimerMessage_loginFalse() {
+    swal({
+        title: 'Maaf, username atau password salah..',
+        text: "I will close in 1 seconds.",
+        timer: 1000,
         showConfirmButton: false
     });
 }
