@@ -17,7 +17,7 @@ function login(){
 		},
 		dataType: "json",
 		success: function(res){
-			//alert(res.message);
+
 			if(res.status==true){
 				createCookie("ck_validLogin", "valid", 1);
 
@@ -36,7 +36,7 @@ function login(){
 			}
 		},
 		error: function(){
-			alert("ajax error");
+			
 		}
 	});
 }
